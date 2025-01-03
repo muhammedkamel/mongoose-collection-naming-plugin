@@ -24,7 +24,7 @@ describe('MongooseCaseConverterPlugin', () => {
 
     MongooseCaseConverterPlugin(schema);
 
-    const TestModel = mongoose.model('Test_Collection_Camel', schema);
+    const TestModel = mongoose.model('TestCollectionCamel', schema);
 
     await TestModel.create({ name: 'test' });
 
@@ -43,7 +43,7 @@ describe('MongooseCaseConverterPlugin', () => {
       namingConvention: NamingConvention.SnakeCase,
     });
 
-    const TestModel = mongoose.model('TestCollectionSnake', schema);
+    const TestModel = mongoose.model('testCollectionSnake', schema);
 
     await TestModel.create({ name: 'test' });
 
