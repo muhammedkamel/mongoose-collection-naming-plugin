@@ -1,9 +1,0 @@
-{
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  },
-  "editor.formatOnSave": true,
-  "editor.indentSize": "tabSize",
-  "editor.tabSize": 2,
-  "eslint.validate": ["javascript", "typescript"]
-}
