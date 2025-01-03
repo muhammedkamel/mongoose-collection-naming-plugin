@@ -63,5 +63,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/muhammedkamel/mongoose-collection-name"
+  },
+  "dependencies": {
+    "pluralize": "^8.0.0"
   }
 }

@@ -2,9 +2,7 @@
 node_modules
 
 # IDE
-/.idea
-/.awcache
-/.vscode
+.vscode/
 
 # misc
 npm-debug.log
