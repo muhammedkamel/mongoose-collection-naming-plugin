@@ -2,17 +2,22 @@
   "compilerOptions": {
     "module": "commonjs",
     "declaration": true,
-    "noImplicitAny": false,
     "removeComments": true,
-    "noLib": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "ES2024",
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
     "sourceMap": true,
     "outDir": "./dist",
     "rootDir": "./",
-    "skipLibCheck": true
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false
   },
-  "include": ["lib/**/*", "../index.ts", "test/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "include": ["lib/**/*", "test/**/*"],
+  "exclude": ["node_modules"]
 }

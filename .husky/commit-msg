@@ -1,0 +1,3 @@
+#!/bin/bash
+
+npx commitlint ${1} --verbose
