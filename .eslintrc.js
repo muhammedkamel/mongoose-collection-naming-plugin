@@ -12,7 +12,6 @@ module.exports = {
     '@stylistic/js',
     '@stylistic/ts',
     'sonarjs',
-    'jest',
   ],
   extends: [
     'eslint:recommended',
@@ -21,12 +20,9 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:sonarjs/recommended-legacy',
     'plugin:security/recommended-legacy',
-    'plugin:jest/recommended',
   ],
   env: {
     node: true,
-    jest: true,
-    'jest/globals': true,
   },
   ignorePatterns: ['.eslintrc.js'],
   rules: {
@@ -73,13 +69,6 @@ module.exports = {
           ['sibling', 'parent'],
           'index',
         ],
-      },
-    ],
-    'jest/expect-expect': [
-      'error',
-      {
-        assertFunctionNames: ['expect', 'request.**.expect'],
-        additionalTestBlockFunctions: ['theoretically'],
       },
     ],
   },

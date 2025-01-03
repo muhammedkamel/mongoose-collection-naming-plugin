@@ -1,12 +1,12 @@
 import mongoose from 'mongoose';
-import * as pluralize from 'pluralize';
+import pluralize from 'pluralize';
 import { NamingConvention } from './naming-convention.enum';
 import {
   toCamelCase,
   toKebabCase,
   toPascalCase,
   toSnakeCase,
-} from './string.utils';
+} from './string.util';
 
 type CaseConverter = (input: string) => string;
 
