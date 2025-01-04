@@ -1,7 +1,7 @@
 import { describe, it, beforeAll, afterAll, expect } from 'vitest';
 import mongoose from 'mongoose';
 import { MongoMemoryServer } from 'mongodb-memory-server';
-import { MongooseCaseConverterPlugin } from '../lib/index';
+import { MongooseNamingPlugin } from '../lib/index';
 import { NamingConvention } from '../lib/naming-convention.enum';
 
 describe('MongooseCaseConverterPlugin', () => {
@@ -22,7 +22,7 @@ describe('MongooseCaseConverterPlugin', () => {
   it('should convert collection names to camelCase by default', async () => {
     const schema = new mongoose.Schema({ name: String });
 
-    MongooseCaseConverterPlugin(schema);
+    MongooseNamingPlugin(schema);
 
     const TestModel = mongoose.model('TestCollectionCamel', schema);
 
@@ -39,7 +39,7 @@ describe('MongooseCaseConverterPlugin', () => {
   it('should convert collection names to snake_case', async () => {
     const schema = new mongoose.Schema({ name: String });
 
-    MongooseCaseConverterPlugin(schema, {
+    MongooseNamingPlugin(schema, {
       namingConvention: NamingConvention.SnakeCase,
     });
 
@@ -58,7 +58,7 @@ describe('MongooseCaseConverterPlugin', () => {
   it('should convert collection names to kebab-case', async () => {
     const schema = new mongoose.Schema({ name: String });
 
-    MongooseCaseConverterPlugin(schema, {
+    MongooseNamingPlugin(schema, {
       namingConvention: NamingConvention.KebabCase,
     });
 
@@ -77,7 +77,7 @@ describe('MongooseCaseConverterPlugin', () => {
   it('should convert collection names to PascalCase', async () => {
     const schema = new mongoose.Schema({ name: String });
 
-    MongooseCaseConverterPlugin(schema, {
+    MongooseNamingPlugin(schema, {
       namingConvention: NamingConvention.PascalCase,
     });
 
