@@ -3,9 +3,18 @@ lib
 index.ts
 package-lock.json
 tsconfig.json
-.prettierrc
+.github
+vit.config.js
+test
+coverage
 
-# misc 
-.commitlintrc.json
+# misc
+.prettierrc
+.prettierignore
+.commitlintrc.js
 .eslintignore
 .eslintrc.js
+.editorconfig
+.husky
+.vscode
+tsconfig.tsbuildinfo

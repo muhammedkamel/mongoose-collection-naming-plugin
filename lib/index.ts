@@ -35,7 +35,7 @@ function convertCollectionName(collectionName: string): string {
   return getCaseConverter(this?.namingConvention)(pluralizedCollectionName);
 }
 
-export function MongooseNamingPlugin(
+export function MongooseCollectionNamingPlugin(
   schema: mongoose.Schema,
   options?: { namingConvention?: NamingConvention },
 ): void {

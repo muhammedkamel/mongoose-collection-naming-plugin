@@ -9,6 +9,7 @@ npm-debug.log
 .DS_Store
 tsconfig.build.tsbuildinfo
 yarn-error.log
+tsconfig.tsbuildinfo
 
 # tests
 coverage
