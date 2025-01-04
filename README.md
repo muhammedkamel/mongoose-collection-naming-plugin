@@ -20,7 +20,10 @@ import {
   NamingConvention,
 } from 'mongoose-collection-naming-plugin';
 
-mongoose.plugin(MongooseCollectionNamingPlugin, { namingConvention: NamingConvention.CamelCase });
+mongoose.plugin(
+  MongooseCollectionNamingPlugin, 
+  { namingConvention: NamingConvention.CamelCase }
+);
 
 ```
 
@@ -30,6 +33,9 @@ const {
   NamingConvention,
 } = require("mongoose-collection-naming-plugin");
 
-mongoose.plugin(MongooseCollectionNamingPlugin, { namingConvention: NamingConvention.SnakeCase });
+mongoose.plugin(
+  MongooseCollectionNamingPlugin, 
+  { namingConvention: NamingConvention.SnakeCase }
+);
 
 ```
