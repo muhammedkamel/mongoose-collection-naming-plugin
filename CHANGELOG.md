@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/compare/v1.0.0...v1.0.1) (2025-01-04)
+
+
+### Bug Fixes
+
+* tsconfig ([#3](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/3)) ([9c26f12](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/9c26f121356cd352eed79fce418dd9fabea977e6))
+
 ## 1.0.0 (2025-01-04)
 
 
