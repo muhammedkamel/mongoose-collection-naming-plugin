@@ -4,7 +4,7 @@
   "description": "Mongoose plugin to name normalize collections names based on naming convention camelCase, snake_case, PascalCase, ...etc",
   "main": "dist/lib/index.js",
   "scripts": {
-    "build": "rimraf dist && tsc",
+    "build": "rimraf dist && tsc -p tsconfig.build.json",
     "lint": "eslint lib/**/*.ts",
     "lint:fix": "eslint lib/**/*.ts --fix",
     "format": "prettier --write lib/**/*.ts",
@@ -69,14 +69,15 @@
   },
   "lint-staged": {
     "**/*.{ts, js, json}": [
-      "npm run lint"
+      "eslint"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muhammedkamel/mongoose-collection-name"
+    "url": "https://github.com/muhammedkamel/mongoose-collection-name"
   },
   "dependencies": {
+    "@types/pluralize": "^0.0.33",
     "pluralize": "^8.0.0"
   },
   "publishConfig": {

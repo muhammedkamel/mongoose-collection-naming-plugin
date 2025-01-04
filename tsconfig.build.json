@@ -16,5 +16,5 @@
     "allowSyntheticDefaultImports": true
   },
   "include": ["lib/**/*", "../index.ts", "test/**/*"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }

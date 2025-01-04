@@ -1,12 +1,18 @@
 import mongoose from 'mongoose';
 import pluralize from 'pluralize';
-import { NamingConvention } from './naming-convention.enum';
 import {
   toCamelCase,
   toKebabCase,
   toPascalCase,
   toSnakeCase,
 } from './string.util';
+
+export enum NamingConvention {
+  CamelCase = 'CamelCase',
+  SnakeCase = 'SnakeCase',
+  KebabCase = 'KebabCase',
+  PascalCase = 'PascalCase',
+}
 
 type CaseConverter = (input: string) => string;
 

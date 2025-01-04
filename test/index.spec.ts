@@ -1,8 +1,7 @@
 import { describe, it, beforeAll, afterAll, expect } from 'vitest';
 import mongoose from 'mongoose';
 import { MongoMemoryServer } from 'mongodb-memory-server';
-import { MongooseCollectionNamingPlugin } from '../lib/index';
-import { NamingConvention } from '../lib/naming-convention.enum';
+import { MongooseCollectionNamingPlugin, NamingConvention } from '../lib/index';
 
 describe('MongooseCaseConverterPlugin', () => {
   let mongoServer: MongoMemoryServer;
