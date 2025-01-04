@@ -68,7 +68,7 @@
     }
   },
   "lint-staged": {
-    "lib/*.{ts, js, json}": [
+    "**/*.{ts, js, json}": [
       "npm run lint"
     ]
   },

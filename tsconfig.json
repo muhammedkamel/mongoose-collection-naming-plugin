@@ -9,7 +9,7 @@
     "target": "ES2021",
     "sourceMap": true,
     "outDir": "./dist",
-    "rootDir": "./lib",
+    "rootDir": "./",
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": false,
@@ -18,6 +18,6 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false
   },
-  "include": ["./lib"],
-  "exclude": ["node_modules", "dist", "test"]
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist", "test", "vite.config.ts"]
 }
