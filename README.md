@@ -8,7 +8,7 @@
 <br>
 
 ![CI](https://github.com/muhammedkamel/mongoose-collection-naming/actions/workflows/ci.yml/badge.svg)
-![releases](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/workflows/release-please/badge.svg)
+![release](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/workflows/release/badge.svg)
 
 
 ## Description
