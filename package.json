@@ -1,6 +1,6 @@
 {
   "name": "mongoose-collection-naming-plugin",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Mongoose plugin to name normalize collections names based on naming convention camelCase, snake_case, PascalCase, ...etc",
   "main": "dist/lib/index.js",
   "scripts": {
