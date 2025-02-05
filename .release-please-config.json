@@ -2,35 +2,43 @@
   "changelog-sections": [
     {
       "type": "feat",
-      "section": "✨ Features"
+      "section": "✨ Features",
+      "hidden": false
     },
     {
       "type": "fix",
-      "section": "🐛 Bug Fixes"
+      "section": "🐛 Bug Fixes",
+      "hidden": false
     },
     {
       "type": "perf",
-      "section": "⚡️ Performance Improvements"
+      "section": "⚡️ Performance Improvements",
+      "hidden": false
     },
     {
       "type": "deprecate",
-      "section": "⚠️ Deprecations"
+      "section": "⚠️ Deprecations",
+      "hidden": false
     },
     {
       "type": "revert",
-      "section": "↩️ Reverts"
+      "section": "↩️ Reverts",
+      "hidden": false
     },
     {
       "type": "deps",
-      "section": "📦 Dependencies"
+      "section": "📦 Dependencies",
+      "hidden": false
     },
     {
       "type": "docs",
-      "section": "📝 Documentation"
+      "section": "📝 Documentation",
+      "hidden": false
     },
     {
       "type": "refactor",
-      "section": "♻️ Code Refactoring"
+      "section": "♻️ Code Refactoring",
+      "hidden": false
     }
   ],
   "packages": {
