@@ -1,4 +1,4 @@
-export function toCamelCase(input: string): string {
+export function toCamelCase(input?: string): string {
   if (!input) return '';
 
   return input
@@ -6,7 +6,7 @@ export function toCamelCase(input: string): string {
     .replace(/^([A-Z])/, (match) => match.toLowerCase());
 }
 
-export function toSnakeCase(input: string): string {
+export function toSnakeCase(input?: string): string {
   if (!input) return '';
 
   return input
@@ -16,7 +16,7 @@ export function toSnakeCase(input: string): string {
     .toLowerCase();
 }
 
-export function toKebabCase(input: string): string {
+export function toKebabCase(input?: string): string {
   if (!input) return '';
 
   return input
@@ -26,7 +26,7 @@ export function toKebabCase(input: string): string {
     .toLowerCase();
 }
 
-export function toPascalCase(input: string): string {
+export function toPascalCase(input?: string): string {
   if (!input) return '';
 
   return input

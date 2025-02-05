@@ -35,15 +35,21 @@ function getCaseConverter(namingConvention?: NamingConvention): CaseConverter {
   }
 }
 
-function convertCollectionName(collectionName: string): string {
-  const pluralizedCollectionName = pluralize(collectionName);
+function convertCollectionName(options?: {
+  namingConvention?: NamingConvention;
+}): (collectionName: string) => string {
+  return (collectionName: string): string => {
+    const pluralizedCollectionName = pluralize(collectionName);
 
-  return getCaseConverter(this?.namingConvention)(pluralizedCollectionName);
+    return getCaseConverter(options?.namingConvention)(
+      pluralizedCollectionName,
+    );
+  };
 }
 
 export function MongooseCollectionNamingPlugin(
   schema: mongoose.Schema,
   options?: { namingConvention?: NamingConvention },
 ): void {
-  mongoose.pluralize(convertCollectionName.bind(options));
+  mongoose.pluralize(convertCollectionName(options));
 }

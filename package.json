@@ -5,10 +5,9 @@
   "main": "dist/lib/index.js",
   "scripts": {
     "build": "rimraf dist && tsc -p tsconfig.build.json",
-    "lint": "eslint lib/**/*.ts",
-    "lint:fix": "eslint lib/**/*.ts --fix",
-    "format": "prettier --write lib/**/*.ts",
-    "precommit": "lint-staged",
+    "lint": "eslint {lib,test}/**/*.ts",
+    "lint:fix": "eslint {lib,test}/**/*.ts --fix",
+    "format": "prettier --write {lib,test}/**/*.ts",
     "prepare": "husky",
     "test": "vitest run",
     "coverage": "vitest run --coverage"
@@ -22,9 +21,7 @@
     "typescript"
   ],
   "files": [
-    "dist",
-    "index.js",
-    "index.d.ts"
+    "dist"
   ],
   "author": "Mohamed Kamel",
   "license": "MIT",
@@ -52,7 +49,6 @@
     "mongodb-memory-server": "^10.1.3",
     "mongoose": "^8.9.3",
     "prettier": "3.4.2",
-    "release-please": "^16.15.0",
     "rimraf": "6.0.1",
     "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",

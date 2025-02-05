@@ -1,20 +1,30 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "declaration": true,
-    "noImplicitAny": false,
-    "removeComments": true,
-    "noLib": false,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "target": "es6",
+    "target": "ESNext",
+    "lib": [
+      "ES2024"
+    ],
     "sourceMap": false,
-    "outDir": "./dist",
-    "rootDir": "./",
-    "skipLibCheck": true,
+    "declaration": true,
+    "declarationMap": true,
+    "isolatedDeclarations": true,
+    "outDir": "dist",
+    "rootDir": "lib",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "newLine": "lf",
+    "noImplicitAny": true,
+    "removeComments": true
   },
-  "include": ["lib/**/*", "index.ts", "test/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "include": [
+    "lib/**/*.ts"
+  ],
 }
