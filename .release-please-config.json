@@ -1,41 +1,41 @@
 {
+  "changelog-sections": [
+    {
+      "type": "feat",
+      "section": "✨ Features"
+    },
+    {
+      "type": "fix",
+      "section": "🐛 Bug Fixes"
+    },
+    {
+      "type": "perf",
+      "section": "⚡️ Performance Improvements"
+    },
+    {
+      "type": "deprecate",
+      "section": "⚠️ Deprecations"
+    },
+    {
+      "type": "revert",
+      "section": "↩️ Reverts"
+    },
+    {
+      "type": "deps",
+      "section": "📦 Dependencies"
+    },
+    {
+      "type": "docs",
+      "section": "📝 Documentation"
+    },
+    {
+      "type": "refactor",
+      "section": "♻️ Code Refactoring"
+    }
+  ],
   "packages": {
     ".": {
       "release-type": "node",
-      "changelog-sections": [
-        {
-          "type": "feat",
-          "section": "✨ Features"
-        },
-        {
-          "type": "fix",
-          "section": "🐛 Bug Fixes"
-        },
-        {
-          "type": "perf",
-          "section": "⚡️ Performance Improvements"
-        },
-        {
-          "type": "deprecate",
-          "section": "⚠️ Deprecations"
-        },
-        {
-          "type": "revert",
-          "section": "↩️ Reverts"
-        },
-        {
-          "type": "deps",
-          "section": "📦 Dependencies"
-        },
-        {
-          "type": "docs",
-          "section": "📝 Documentation"
-        },
-        {
-          "type": "refactor",
-          "section": "♻️ Code Refactoring"
-        }
-      ],
       "bump-minor-pre-major": true,
       "bump-patch-for-minor-pre-major": true,
       "draft": false,
