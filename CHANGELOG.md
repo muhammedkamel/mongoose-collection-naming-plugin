@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/compare/v1.0.3...v1.1.0) (2025-02-05)
+
+
+### Features
+
+* force minor release ([#18](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/18)) ([03d446f](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/03d446f28f76f54cf33909b99dfb4f2547e6b690))
+
 ## [1.0.3](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/compare/v1.0.2...v1.0.3) (2025-01-06)
 
 
