@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/compare/v1.1.0...v1.1.1) (2025-02-05)
+
+
+### Bug Fixes
+
+* force bump patch version ([#26](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/26)) ([3fb6272](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/3fb6272f7d7ef79b46d267608ea4c23392b21abc))
+
 ## [1.1.0](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/compare/v1.0.3...v1.1.0) (2025-02-05)
 
 
