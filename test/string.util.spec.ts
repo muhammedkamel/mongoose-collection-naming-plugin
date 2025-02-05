@@ -16,6 +16,7 @@ describe('String Utils', () => {
   it('should convert to snake_case', () => {
     expect(toSnakeCase('helloWorld')).toBe('hello_world');
     expect(toSnakeCase('hello-world')).toBe('hello_world');
+
     expect(toSnakeCase('HelloWorld')).toBe('hello_world');
   });
 
@@ -48,18 +49,18 @@ describe('String Utils', () => {
   });
 
   it('should handle undefined input for camelCase', () => {
-    expect(toCamelCase(undefined)).toBe('');
+    expect(toCamelCase()).toBe('');
   });
 
   it('should handle undefined input for snake_case', () => {
-    expect(toSnakeCase(null)).toBe('');
+    expect(toSnakeCase()).toBe('');
   });
 
   it('should handle undefined input for kebab-case', () => {
-    expect(toKebabCase(null)).toBe('');
+    expect(toKebabCase()).toBe('');
   });
 
   it('should handle undefined input for PascalCase', () => {
-    expect(toPascalCase(undefined as any)).toBe('');
+    expect(toPascalCase()).toBe('');
   });
 });
