@@ -40,13 +40,10 @@ pnpm add mongoose-collection-naming-plugin
 ```ts
 import {
   MongooseCollectionNamingPlugin,
-  NamingConvention,
 } from 'mongoose-collection-naming-plugin';
 
-mongoose.plugin(
-  MongooseCollectionNamingPlugin, 
-  { namingConvention: NamingConvention.CamelCase }
-);
+// It uses NamingConvention.CamelCase by default
+mongoose.plugin(MongooseCollectionNamingPlugin);
 
 ```
 
