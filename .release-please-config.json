@@ -9,7 +9,7 @@
       "prerelease": false,
       "include-v-in-tag": true,
       "include-component-in-tag": false,
-      "changelog-type": "github",
+      "changelog-type": "default",
       "changelog-path": "CHANGELOG-1.md",
       "changelog-sections": [
         {
