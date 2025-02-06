@@ -9,6 +9,7 @@
       "prerelease": false,
       "include-v-in-tag": true,
       "changelog-type": "github",
+      "changelog-path": "CHANGELOG-1.md",
       "changelog-sections": [
         {
           "type": "feat",
