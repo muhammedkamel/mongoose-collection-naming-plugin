@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.4](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/compare/v1.1.3...v1.1.4) (2025-02-06)
+
+
+### Bug Fixes
+
+* change changelog-type ([#37](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/37)) ([a06af36](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/a06af36daa3261a3c1cc16e7e8dacc2001e4ec27))
+* changelog style ([#32](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/32)) ([5eb3f72](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/5eb3f72a11bf8bb1e442758781d843d1cc8cfc2e))
+* release-please pipeline ([#35](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/35)) ([ff65a96](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/ff65a9670a08b52d3bfd23376a512d99151f5988))
+* remove the release type from the workflow and depend on the configuration totally ([76b38f4](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/76b38f4a75bcf4410333b1f064213cb14c57c6c7))
+
 ## [1.1.3](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/compare/v1.1.2...v1.1.3) (2025-02-05)
 
 
