@@ -1,46 +1,5 @@
 {
-  "changelog-sections": [
-    {
-      "type": "feat",
-      "section": "✨ Features",
-      "hidden": false
-    },
-    {
-      "type": "fix",
-      "section": "🐛 Bug Fixes",
-      "hidden": false
-    },
-    {
-      "type": "perf",
-      "section": "⚡️ Performance Improvements",
-      "hidden": false
-    },
-    {
-      "type": "deprecate",
-      "section": "⚠️ Deprecations",
-      "hidden": false
-    },
-    {
-      "type": "revert",
-      "section": "↩️ Reverts",
-      "hidden": false
-    },
-    {
-      "type": "deps",
-      "section": "📦 Dependencies",
-      "hidden": false
-    },
-    {
-      "type": "docs",
-      "section": "📝 Documentation",
-      "hidden": false
-    },
-    {
-      "type": "refactor",
-      "section": "♻️ Code Refactoring",
-      "hidden": false
-    }
-  ],
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
   "packages": {
     ".": {
       "release-type": "node",
@@ -48,7 +7,49 @@
       "bump-patch-for-minor-pre-major": true,
       "draft": false,
       "prerelease": false,
-      "include-v-in-tag": true
+      "include-v-in-tag": true,
+      "changelog-sections": [
+        {
+          "type": "feat",
+          "section": "✨ Features",
+          "hidden": false
+        },
+        {
+          "type": "fix",
+          "section": "🐛 Bug Fixes",
+          "hidden": false
+        },
+        {
+          "type": "perf",
+          "section": "⚡️ Performance Improvements",
+          "hidden": false
+        },
+        {
+          "type": "deprecate",
+          "section": "⚠️ Deprecations",
+          "hidden": false
+        },
+        {
+          "type": "revert",
+          "section": "↩️ Reverts",
+          "hidden": false
+        },
+        {
+          "type": "deps",
+          "section": "📦 Dependencies",
+          "hidden": false
+        },
+        {
+          "type": "docs",
+          "section": "📝 Documentation",
+          "hidden": false
+        },
+        {
+          "type": "refactor",
+          "section": "♻️ Code Refactoring",
+          "hidden": false
+        }
+      ]
     }
   }
 }
