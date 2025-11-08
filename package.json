@@ -11,7 +11,8 @@
     "format": "prettier --write {lib,test}/**/*.ts",
     "prepare": "husky",
     "test": "vitest run",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "lint:staged": "lint-staged"
   },
   "keywords": [
     "mongoose",
@@ -32,6 +33,7 @@
     "@stylistic/eslint-plugin-js": "^2.12.1",
     "@stylistic/eslint-plugin-ts": "^2.12.1",
     "@types/node": "^22.10.3",
+    "@types/pluralize": "^0.0.33",
     "@typescript-eslint/eslint-plugin": "8.19.0",
     "@typescript-eslint/parser": "8.19.0",
     "@vitejs/plugin-vue": "^5.2.1",
@@ -57,15 +59,10 @@
     "vitest": "^2.1.8"
   },
   "peerDependencies": {
-    "mongoose": ">=8.0.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "mongoose": ">=6.0.0"
   },
   "lint-staged": {
-    "**/*.{ts, js, json}": [
+    "**/*.{ts,js}": [
       "eslint"
     ]
   },
@@ -74,7 +71,6 @@
     "url": "https://github.com/muhammedkamel/mongoose-collection-name"
   },
   "dependencies": {
-    "@types/pluralize": "^0.0.33",
     "pluralize": "^8.0.0"
   },
   "publishConfig": {
