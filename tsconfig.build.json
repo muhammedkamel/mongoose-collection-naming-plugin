@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "target": "ESNext",
     "lib": [
       "ES2024"
@@ -22,7 +23,7 @@
     "noUncheckedIndexedAccess": true,
     "newLine": "lf",
     "noImplicitAny": true,
-    "removeComments": true
+    "removeComments": false
   },
   "include": [
     "lib/**/*.ts"
