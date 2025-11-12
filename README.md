@@ -25,6 +25,7 @@ A Mongoose plugin that automatically converts and standardizes MongoDB collectio
 - 📘 Full TypeScript support with type definitions
 - ⚡ Zero configuration - works out of the box with sensible defaults
 - 🔒 Simple and predictable - one convention for entire application
+- 🔄 Dual module support - works with both CommonJS and ES modules
 
 ## Installation
 
@@ -123,6 +124,7 @@ mongoose.plugin(MongooseCollectionNamingPlugin, {
 - `BlogPost` → `blog_posts`
 - `UserProfile` → `user_profiles`
 - `productCategory` → `product_categories`
+- `API-Key` → `api_keys`
 
 ### 3. KebabCase
 
@@ -223,6 +225,58 @@ enum NamingConvention {
   KebabCase = 'KebabCase', // user-profiles
   PascalCase = 'PascalCase', // UserProfiles
 }
+```
+
+### Utility Functions
+
+The plugin also exports utility functions for case conversion that you can use independently:
+
+#### `toCamelCase(input?: string): string`
+
+Converts a string to camelCase format.
+
+```typescript
+import { toCamelCase } from 'mongoose-collection-naming-plugin';
+
+toCamelCase('user_profile');      // returns 'userProfile'
+toCamelCase('blog-post');         // returns 'blogPost'
+toCamelCase('ProductCategory');   // returns 'productCategory'
+```
+
+#### `toSnakeCase(input?: string): string`
+
+Converts a string to snake_case format.
+
+```typescript
+import { toSnakeCase } from 'mongoose-collection-naming-plugin';
+
+toSnakeCase('userProfile');       // returns 'user_profile'
+toSnakeCase('blog-post');         // returns 'blog_post'
+toSnakeCase('ProductCategory');   // returns 'product_category'
+```
+
+#### `toKebabCase(input?: string): string`
+
+Converts a string to kebab-case format.
+
+```typescript
+import { toKebabCase } from 'mongoose-collection-naming-plugin';
+
+toKebabCase('userProfile');       // returns 'user-profile'
+toKebabCase('product_category');  // returns 'product-category'
+toKebabCase('BlogPost');          // returns 'blog-post'
+```
+
+#### `toPascalCase(input?: string): string`
+
+Converts a string to PascalCase format.
+
+```typescript
+import { toPascalCase } from 'mongoose-collection-naming-plugin';
+
+toPascalCase('user_profile');     // returns 'UserProfile'
+toPascalCase('blog-post');        // returns 'BlogPost'
+toPascalCase('productCategory');  // returns 'ProductCategory'
 ```
 
 ## Advanced Examples
@@ -435,6 +489,26 @@ const specialSchema = new mongoose.Schema(
 
 - Node.js >= 14.x
 - Mongoose >= 6.x
+
+## 🔄 Module System Support
+
+This package supports both CommonJS and ES modules out of the box:
+
+### ES Modules (ESM)
+
+```typescript
+import mongoose from 'mongoose';
+import { MongooseCollectionNamingPlugin, NamingConvention } from 'mongoose-collection-naming-plugin';
+```
+
+### CommonJS (CJS)
+
+```javascript
+const mongoose = require('mongoose');
+const { MongooseCollectionNamingPlugin, NamingConvention } = require('mongoose-collection-naming-plugin');
+```
+
+The package automatically provides the correct module format based on your project configuration.
 
 ## 🤝 Contributing
 
