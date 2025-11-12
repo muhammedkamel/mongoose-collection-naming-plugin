@@ -52,7 +52,6 @@
     "@types/pluralize": "^0.0.33",
     "@typescript-eslint/eslint-plugin": "8.46.3",
     "@typescript-eslint/parser": "8.46.3",
-    "@vitejs/plugin-vue": "^5.2.1",
     "@vitest/coverage-istanbul": "^2.1.8",
     "conventional-changelog-atom": "^5.0.0",
     "eslint": "^9.39.1",

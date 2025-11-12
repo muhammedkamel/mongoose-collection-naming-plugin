@@ -23,7 +23,7 @@
     "noUncheckedIndexedAccess": true,
     "newLine": "lf",
     "noImplicitAny": true,
-    "removeComments": true,
+    "removeComments": true
   },
   "include": [
     "lib/**/*",
