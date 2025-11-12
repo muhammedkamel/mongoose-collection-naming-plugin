@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   /*
    * Resolve and load @commitlint/config-conventional from node_modules.
    * Referenced packages must be installed
@@ -81,3 +81,6 @@ module.exports = {
     },
   },
 };
+
+
+
