@@ -50,6 +50,11 @@
           "type": "refactor",
           "section": "♻️ Code Refactoring",
           "hidden": false
+        },
+        {
+          "type": "chore",
+          "section": "🧹 Chores",
+          "hidden": false
         }
       ]
     }
