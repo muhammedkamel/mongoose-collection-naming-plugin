@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.6](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/compare/v1.1.5...v1.1.6) (2025-11-12)
+
+
+### 📝 Documentation
+
+* update repository URL and enhance README with utility functions and module support ([#53](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/53)) ([331b212](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/331b2123f62e2b9fa20e5bbc701d45c31ca1429b))
+
 ## [1.1.5](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/compare/v1.1.4...v1.1.5) (2025-11-08)
 
 
