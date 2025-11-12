@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.1.6](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/compare/v1.1.5...v1.1.6) (2025-11-12)
+
+
+### 🐛 Bug Fixes
+
+* add chore section to release-please configuration ([#55](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/55)) ([d7fb4fd](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/d7fb4fd81ee4d7a6e77812cfe4e566402d58d473))
+
+
+### 📝 Documentation
+
+* update repository URL and enhance README with utility functions and module support ([#53](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/53)) ([331b212](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/331b2123f62e2b9fa20e5bbc701d45c31ca1429b))
+
+
+### 🧹 Chores
+
+* **deps:** bump esbuild, vite, @vitest/coverage-istanbul and vitest ([#49](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/49)) ([9571b20](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/9571b2062ba58db1941e5bb70255237aba3ee24a))
+* upgrade eslint ([#52](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/52)) ([2b0a344](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/2b0a344f8a41672e7a2616677964acbde263b5a6))
+
 ## [1.1.5](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/compare/v1.1.4...v1.1.5) (2025-11-08)
 
 
