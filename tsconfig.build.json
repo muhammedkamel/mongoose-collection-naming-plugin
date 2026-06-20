@@ -4,12 +4,11 @@
     "moduleResolution": "bundler",
     "target": "ESNext",
     "lib": [
-      "ES2024"
+      "ES2023"
     ],
     "sourceMap": false,
     "declaration": true,
     "declarationMap": true,
-    "isolatedDeclarations": true,
     "outDir": "dist",
     "rootDir": "lib",
     "esModuleInterop": true,

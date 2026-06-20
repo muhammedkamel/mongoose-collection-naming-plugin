@@ -24,9 +24,17 @@
     "lint:fix": "eslint {lib,test}/**/*.ts --fix",
     "format": "prettier --write {lib,test}/**/*.ts",
     "prepare": "husky",
-    "test": "vitest run",
-    "coverage": "vitest run --coverage",
-    "lint:staged": "lint-staged"
+    "test": "vitest run --project source",
+    "test:dist": "vitest run --project dist",
+    "coverage": "vitest run --coverage --project source",
+    "verify:cjs": "node --input-type=commonjs -e \"const p=require('./dist/index.cjs'); if(typeof p.MongooseCollectionNamingPlugin!=='function') throw new Error('missing plugin'); if(p.NamingConvention?.SnakeCase!=='SnakeCase') throw new Error('missing enum'); if(p.toSnakeCase('BlogPost')!=='blog_post') throw new Error('toSnakeCase broken');\"",
+    "verify:build": "npm test && npm run build && npm run test:dist && npm run verify:cjs && npm pack --dry-run",
+    "verify": "npm run lint && npm run verify:build",
+    "prepublishOnly": "npm run verify",
+    "prepack": "npm run build"
+  },
+  "engines": {
+    "node": ">=22"
   },
   "keywords": [
     "mongoose",
@@ -41,6 +49,10 @@
   ],
   "author": "Mohamed Kamel",
   "license": "MIT",
+  "homepage": "https://github.com/muhammedkamel/mongoose-collection-naming-plugin#readme",
+  "bugs": {
+    "url": "https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues"
+  },
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
@@ -64,7 +76,6 @@
     "eslint-plugin-sonarjs": "^3.0.5",
     "globals": "^16.5.0",
     "husky": "^9.1.7",
-    "lint-staged": "15.3.0",
     "mongodb-memory-server": "^10.1.3",
     "mongoose": "^8.9.3",
     "prettier": "3.6.2",
@@ -79,11 +90,6 @@
   },
   "peerDependencies": {
     "mongoose": ">=6.0.0"
-  },
-  "lint-staged": {
-    "**/*.{ts,js}": [
-      "eslint"
-    ]
   },
   "repository": {
     "type": "git",
