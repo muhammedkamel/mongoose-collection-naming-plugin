@@ -11,12 +11,15 @@ on:
       - edited
       - synchronize
     paths-ignore:
-      - '.editorconfig'
+      - ".editorconfig"
   push:
     branches:
       - master
     paths-ignore:
-      - '.editorconfig'
+      - ".editorconfig"
+
+permissions:
+  contents: read
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -30,7 +33,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: 'npm'
+          cache: "npm"
       - run: npm ci
       - run: npm run lint
 
@@ -46,6 +49,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
+          cache: "npm"
       - run: npm ci
       - run: npm run verify:build
