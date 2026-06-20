@@ -487,7 +487,7 @@ const specialSchema = new mongoose.Schema(
 
 ## 📋 Requirements
 
-- Node.js >= 22.x
+- Node.js >= 22.x (CI verifies Node.js 22 and 24 LTS)
 - Mongoose >= 6.x
 
 ## 🔄 Module System Support

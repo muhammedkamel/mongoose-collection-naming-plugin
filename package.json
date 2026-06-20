@@ -28,7 +28,8 @@
     "test:dist": "vitest run --project dist",
     "coverage": "vitest run --coverage --project source",
     "verify:cjs": "node --input-type=commonjs -e \"const p=require('./dist/index.cjs'); if(typeof p.MongooseCollectionNamingPlugin!=='function') throw new Error('missing plugin'); if(p.NamingConvention?.SnakeCase!=='SnakeCase') throw new Error('missing enum'); if(p.toSnakeCase('BlogPost')!=='blog_post') throw new Error('toSnakeCase broken');\"",
-    "verify": "npm run lint && npm test && npm run build && npm run test:dist && npm run verify:cjs && npm pack --dry-run",
+    "verify:build": "npm test && npm run build && npm run test:dist && npm run verify:cjs && npm pack --dry-run",
+    "verify": "npm run lint && npm run verify:build",
     "prepublishOnly": "npm run verify",
     "prepack": "npm run build"
   },
