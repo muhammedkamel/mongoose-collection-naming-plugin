@@ -7,7 +7,7 @@
 
 <br>
 
-![CI](https://github.com/muhammedkamel/mongoose-collection-naming/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/actions/workflows/ci.yml/badge.svg)
 ![release](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/workflows/release/badge.svg)
 [![npm version](https://badge.fury.io/js/mongoose-collection-naming-plugin.svg)](https://badge.fury.io/js/mongoose-collection-naming-plugin)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -487,7 +487,7 @@ const specialSchema = new mongoose.Schema(
 
 ## 📋 Requirements
 
-- Node.js >= 14.x
+- Node.js >= 22.x
 - Mongoose >= 6.x
 
 ## 🔄 Module System Support
