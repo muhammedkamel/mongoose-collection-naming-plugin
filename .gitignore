@@ -17,3 +17,6 @@ coverage
 
 # dist
 /dist
+
+# context
+CONTEXT.md
