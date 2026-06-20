@@ -1,0 +1,111 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":semanticCommitTypeAll(chore)",
+    ":separateMajorReleases"
+  ],
+  "baseBranches": ["master"],
+  "timezone": "UTC",
+  "schedule": ["before 6am on monday"],
+  "minimumReleaseAge": "3 days",
+  "internalChecksFilter": "strict",
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security"],
+    "automerge": true
+  },
+  "osvVulnerabilityAlerts": true,
+  "pinGitHubActionDigests": true,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 6am on the first day of the month"]
+  },
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "automerge": true,
+      "automergeType": "pr"
+    },
+    {
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["patch"],
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["lockFileMaintenance"],
+      "automerge": true,
+      "automergeType": "pr"
+    },
+    {
+      "matchPackageNames": [
+        "typescript-eslint",
+        "@typescript-eslint/eslint-plugin",
+        "@typescript-eslint/parser"
+      ],
+      "groupName": "typescript-eslint"
+    },
+    {
+      "matchPackageNames": ["vitest", "@vitest/coverage-istanbul"],
+      "groupName": "vitest"
+    },
+    {
+      "matchPackageNames": [
+        "rollup",
+        "@rollup/plugin-commonjs",
+        "@rollup/plugin-node-resolve",
+        "@rollup/plugin-typescript",
+        "rollup-plugin-dts"
+      ],
+      "groupName": "rollup"
+    },
+    {
+      "matchPackageNames": [
+        "eslint",
+        "eslint-config-prettier",
+        "eslint-import-resolver-typescript",
+        "eslint-plugin-*",
+        "@stylistic/eslint-plugin",
+        "globals"
+      ],
+      "groupName": "eslint"
+    },
+    {
+      "matchPackageNames": ["@commitlint/*", "conventional-changelog-atom", "husky"],
+      "groupName": "commitlint"
+    },
+    {
+      "matchPackageNames": ["@types/*"],
+      "groupName": "types"
+    },
+    {
+      "matchPackageNames": ["typescript", "ts-node", "ts-loader"],
+      "groupName": "typescript"
+    },
+    {
+      "matchPackageNames": ["mongoose", "mongodb-memory-server"],
+      "groupName": "mongodb-test"
+    },
+    {
+      "matchPackageNames": ["prettier", "rimraf"],
+      "groupName": "node-tooling"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "pinDigests": true,
+      "groupName": "github-actions",
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "minimumReleaseAge": "14 days"
+    },
+    {
+      "matchPackageNames": ["mongoose"],
+      "matchUpdateTypes": ["major"],
+      "labels": ["peer-compat"]
+    }
+  ]
+}
