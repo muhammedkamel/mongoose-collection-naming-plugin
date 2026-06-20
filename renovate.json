@@ -12,8 +12,7 @@
   "internalChecksFilter": "strict",
   "vulnerabilityAlerts": {
     "enabled": true,
-    "labels": ["security"],
-    "automerge": true
+    "labels": ["security"]
   },
   "osvVulnerabilityAlerts": true,
   "pinGitHubActionDigests": true,
@@ -96,6 +95,12 @@
       "pinDigests": true,
       "groupName": "github-actions",
       "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["patch", "minor"],
+      "isVulnerabilityAlert": true,
+      "automerge": true,
+      "automergeType": "pr"
     },
     {
       "matchUpdateTypes": ["major"],
