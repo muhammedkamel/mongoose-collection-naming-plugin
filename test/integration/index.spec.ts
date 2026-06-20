@@ -9,7 +9,10 @@ import {
 } from 'vitest';
 import mongoose from 'mongoose';
 import { MongoMemoryServer } from 'mongodb-memory-server';
-import { MongooseCollectionNamingPlugin, NamingConvention } from '../lib/index';
+import {
+  MongooseCollectionNamingPlugin,
+  NamingConvention,
+} from '../../lib/index';
 
 describe('MongooseCollectionNamingPlugin', () => {
   let mongoServer: MongoMemoryServer;

@@ -4,7 +4,7 @@ import {
   toSnakeCase,
   toKebabCase,
   toPascalCase,
-} from '../lib/string.util';
+} from '../../lib/string.util';
 
 describe('String Utils', () => {
   it('should convert to camelCase', () => {

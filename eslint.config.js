@@ -128,9 +128,17 @@ export default [
 
   // Override for test/spec files
   {
-    files: ['**/*.spec.ts', '**/*.spec.tsx', '**/*.test.ts', '**/*.test.tsx'],
+    files: ['**/*.spec.ts', '**/*.test.ts'],
     rules: {
       'sonarjs/no-duplicate-string': 'off',
+    },
+  },
+
+  // dist smoke tests import ../../dist/index.js before build on clean checkouts
+  {
+    files: ['test/dist/**/*.spec.ts'],
+    rules: {
+      'import/no-unresolved': 'off',
     },
   },
 ];
