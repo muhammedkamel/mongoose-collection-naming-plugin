@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.7](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/compare/v1.1.6...v1.1.7) (2026-06-20)
+
+
+### 🧹 Chores
+
+* **deps:** bump glob ([#57](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/57)) ([f138dea](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/f138dea121b8383daa2d64ba5d3a617f5bea71fd))
+* **deps:** bump vite, @vitest/coverage-istanbul and vitest ([#67](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/67)) ([63f29e7](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/63f29e7b5805ab58829c6cf6f3302af32888108c))
+* enhance CI workflow permissions and standardize registry URL ([#75](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/75)) ([2c48a67](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/2c48a677dffbf3d892f8d5f1575a47c264045119))
+
 ## [1.1.6](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/compare/v1.1.5...v1.1.6) (2025-11-12)
 
 
