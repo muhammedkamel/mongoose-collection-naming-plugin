@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/compare/v2.0.0...v2.0.1) (2026-06-20)
+
+
+### 🧹 Chores
+
+* add Renovate for automated dependency updates ([#79](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/79)) ([b0933c1](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/b0933c107cca547d30259a494f661af1cb8d13eb))
+
 ## [2.0.0](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/compare/v1.1.6...v2.0.0) (2026-06-20)
 
 
