@@ -1,5 +1,27 @@
 # Changelog
 
+## [2.0.1](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/compare/v2.0.0...v2.0.1) (2026-10-10)
+
+
+### 🐛 Bug Fixes
+
+* use GITHUB_TOKEN instead of custom RELEASE_PLEASE_TOKEN ([904cfab](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/904cfab333e7d7fbfc3c7c0834f0d1d864c446ac))
+
+
+### 🧹 Chores
+
+* add Renovate for automated dependency updates ([#79](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/79)) ([b0933c1](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/b0933c107cca547d30259a494f661af1cb8d13eb))
+* **deps-dev:** bump @commitlint/cli from 19.6.1 to 21.2.3 ([#96](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/96)) ([9b89542](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/9b895428b45cddc7b42f675e3078e4f3eace8bbc))
+* **deps-dev:** bump @commitlint/config-conventional ([#88](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/88)) ([c0dfbd6](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/c0dfbd68133ac9a451adc52854cfc52f3c7e76b9))
+* **deps-dev:** bump @types/node from 22.10.3 to 26.6.4 ([#90](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/90)) ([3ff2e16](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/3ff2e16344de7af8e3bf4ce49a7f0f1f68fbf385))
+* **deps-dev:** bump eslint-plugin-n from 17.23.1 to 18.4.1 ([#91](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/91)) ([0601650](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/0601650ccc2c16bbb739aaee3f0ea055bc170e00))
+* **deps-dev:** bump eslint-plugin-sonarjs from 3.0.5 to 4.2.2 ([#94](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/94)) ([4812856](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/48128566ffd6b116a7c88cd4dcbc36fe7607185c))
+* **deps-dev:** bump globals from 16.5.0 to 17.13.0 ([#97](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/97)) ([a657357](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/a657357f426faed6b244058e21b0fb06ada96a57))
+* **deps-dev:** bump mongodb-memory-server from 10.1.3 to 11.3.0 ([#92](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/92)) ([cd6407a](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/cd6407a6da7413be3d74f6527d2bf1501c25e479))
+* **deps-dev:** bump mongoose from 8.9.5 to 8.24.5 ([#89](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/89)) ([e6d0d57](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/e6d0d57cbee8aae21b7270c2a4759bb9a8b9efb2))
+* **deps-dev:** bump the dev-dependencies group across 1 directory with 13 updates ([#86](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/86)) ([5047070](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/50470709d3d6e204c66d6317e8bb316424291d6a))
+* replace Renovate with GitHub Dependabot ([#82](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues/82)) ([537a5d1](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/commit/537a5d13cb89f81aef5451ea74481fa75a084a94))
+
 ## [2.0.0](https://github.com/muhammedkamel/mongoose-collection-naming-plugin/compare/v1.1.6...v2.0.0) (2026-06-20)
 
 
