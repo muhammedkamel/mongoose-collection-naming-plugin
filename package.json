@@ -33,14 +33,27 @@
     "prepublishOnly": "npm run verify",
     "prepack": "npm run build"
   },
-  "engines": { "node": ">=22" },
-  "keywords": ["mongoose", "mongodb", "plugin", "nodejs", "javascript", "typescript"],
-  "files": ["dist"],
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "mongoose",
+    "mongodb",
+    "plugin",
+    "nodejs",
+    "javascript",
+    "typescript"
+  ],
+  "files": [
+    "dist"
+  ],
   "sideEffects": false,
   "author": "Mohamed Kamel",
   "license": "MIT",
   "homepage": "https://github.com/muhammedkamel/mongoose-collection-naming-plugin#readme",
-  "bugs": { "url": "https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues" },
+  "bugs": {
+    "url": "https://github.com/muhammedkamel/mongoose-collection-naming-plugin/issues"
+  },
   "devDependencies": {
     "@commitlint/cli": "^21.2.3",
     "@commitlint/config-conventional": "^21.2.3",
@@ -72,12 +85,21 @@
     "rollup-plugin-dts": "^6.2.3",
     "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
-    "typescript": "5.7.2",
+    "typescript": "^6.0.3",
     "typescript-eslint": "^8.71.1",
     "vitest": "^4.1.9"
   },
-  "peerDependencies": { "mongoose": ">=6.0.0" },
-  "repository": { "type": "git", "url": "https://github.com/muhammedkamel/mongoose-collection-naming-plugin" },
-  "dependencies": { "pluralize": "^8.0.0" },
-  "publishConfig": { "access": "public" }
+  "peerDependencies": {
+    "mongoose": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muhammedkamel/mongoose-collection-naming-plugin"
+  },
+  "dependencies": {
+    "pluralize": "^8.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
