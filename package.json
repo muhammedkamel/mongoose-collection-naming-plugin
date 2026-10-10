@@ -64,7 +64,7 @@
     "@types/pluralize": "^0.0.33",
     "@typescript-eslint/eslint-plugin": "8.46.3",
     "@typescript-eslint/parser": "8.46.3",
-    "@vitest/coverage-istanbul": "^4.1.9",
+    "@vitest/coverage-istanbul": "^5.0.3",
     "conventional-changelog-atom": "^5.0.0",
     "eslint": "^9.39.1",
     "eslint-config-prettier": "10.1.8",
