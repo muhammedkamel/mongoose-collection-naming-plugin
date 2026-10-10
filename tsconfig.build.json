@@ -22,7 +22,8 @@
     "noUncheckedIndexedAccess": true,
     "newLine": "lf",
     "noImplicitAny": true,
-    "removeComments": false
+    "removeComments": false,
+    "skipLibCheck": true
   },
   "include": [
     "lib/**/*.ts"
